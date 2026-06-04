@@ -1,0 +1,111 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /apps/grit/client
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /apps/grit/server
+    schedule:
+      interval: daily
+
+  - package-ecosystem: bundler
+    directory: /apps/grit/server
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /grit-docs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /grit-docs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: bundler
+    directory: /modules/assays/backend
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /modules/assays/frontend
+    schedule:
+      interval: daily
+
+  - package-ecosystem: bundler
+    directory: /modules/compounds/backend
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /modules/compounds/frontend
+    schedule:
+      interval: daily
+
+  - package-ecosystem: bundler
+    directory: /modules/core/backend
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /modules/core/frontend
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/frontend/api
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/frontend/client-library
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/frontend/form
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/frontend/notifications
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/frontend/plots
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/frontend/spreadsheet
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/frontend/table
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /tools/ruby
+    schedule:
+      interval: daily
